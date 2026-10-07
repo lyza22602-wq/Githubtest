@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+           
+        }
+        .box:hover{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+        }
+        button{
+           width: 500px;
+           height: 90px;
+           background-color: rgb(210, 148, 148);
+        }
+        button:active{
+            background-color: darkgray;
+            border-color: aqua;
+            
+        }
+        button:active{
+            cursor: pointer;
+        }
+        input{
+            width: 500px;
+            height: 50px;
+            background-color: rgb(82, 21, 188);
+        
+        }
+        input:focus{
+            cursor: cell;
+        }
+        a:link{
+            color: rgb(192, 137, 71);
+        }
+        a:visited{
+            color: aquamarine;
+        }
+        .parent :first-child{
+            color: orange;
+        }
+        .parent :last-child{
+            color: cadetblue;
+        }
+        .parent :nth-child(3){
+                color: purple;
+        }
+        .parent :nth-child(2){
+                color: rgb(148, 226, 226);
+        }
+        h1::before{
+            content: "😭";
+        }
+        h1::after{
+            content: "😍";
+        }
+        
+        h1::first-letter{
+            color: brown;
+        }
+        .text::first-line{
+            
+            background-color: blue;
+        }
+        .text::selection{
+            background-color: pink;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button>click to change</button><br>
+    <input type="text" placeholder="input"><br>
+    <a href="https://maps.app.goo.gl/rbuQ3CQ9QVdwzETb8">RUPP</a>
+    <div class="parent">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+    </div>
+    <form action="">
+        <select name="" id="">
+            <option disabled value="">Select gender</option>
+            <option value="">male</option>
+            <option selected value="">female</option>
+        </select>
+        <input checked type="checkbox">
+    </form>
+    <h1>7 day ago</h1>
+    <div class="text" style="width: 100px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias natus impedit corrupti rem ex tenetur sed mollitia rerum fugit nam modi aliquid asperiores, tempore dolore doloribus eos! Nisi tempora necessitatibus ab eum quo aut molestias eveniet. Voluptatem ex veritatis delectus. Doloremque cupiditate, pariatur, veritatis obcaecati modi placeat quas soluta cumque unde neque quis. Pariatur laborum rem vel cumque sequi et necessitatibus voluptates, reiciendis esse provident corporis placeat doloribus minus qui est! Quos placeat excepturi voluptates optio culpa beatae asperiores quia, veniam modi eaque voluptate maiores dolor minus tempora iste libero. Tenetur ratione laborum iusto ea ut sunt, ad corrupti magnam.</div>
+</body>
+</html>

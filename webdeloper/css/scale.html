@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+       .card{
+        width: 450px;
+        height: 600px;
+        background-color:rgb(250, 248, 248);
+        transition: all 0.5s ease-in-out;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+        position: relative;
+       } 
+        .image img{
+            width: 420px;
+            height: 450px;
+            background-size: cover;
+            border-radius: 20px;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+        h2{
+            position:absolute;
+            top: 470px;
+            left: 15px;
+            
+        }
+        .star img{
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 505px;
+            left: 20px;
+            object-fit: cover;
+            background-size: 20px;
+            
+        }
+        del{
+            position: absolute;
+            top: 550px;
+            left: 25px;
+            color: gray;
+
+        }
+        span{
+            position: absolute;
+            top: 545px;
+            left: 70px;
+            font-size: 20px;
+            
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            position: absolute;
+            top: 550px;
+            left: 150px;
+            color: white;
+            background-color: green;
+            border-radius: 5px;
+            border: none;
+           
+        }
+        .add-card button{
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            top: 250px;
+            left: 150px;
+            color: white;
+            background-color: rgb(0, 140, 255);
+            border-radius: 35px;
+            border: none;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .card:hover button{
+            opacity: 2;
+        }
+       
+        .icon span{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            box-shadow: 0 0 2px black;
+            position: absolute;
+            left: 390px;
+            top: 430px;
+            padding: 9px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+
+
+        }
+        .icon:hover span{
+            opacity: 1;
+        }
+        .icon2 span{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            box-shadow: 0 0 2px black;
+            position: absolute;
+            left: 390px;
+            top: 530px;
+            padding: 9px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+        }
+        .icon3 span{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            box-shadow: 0 0 2px black;
+            position: absolute;
+            left: 390px;
+            top: 477px;
+            padding: 9px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+        }
+     </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFom80puzjP3M3VWo0ydGGlyeizMHH1c9VDWYsoHHxA&s=10" alt="">
+        </div>
+        <div class="text">
+            <h2>Product Iphone</h2>
+        </div>
+        <div class="star">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnUa8JHd7bu7FgXMe2e4sXdPd9QMIzAFsz1ASFlijFkQ&s=10" alt="">
+        </div>
+        <div class="price">
+            <del>3000$</del>
+            <span>1200$</span>
+        </div>
+        <button>Add to card</button>
+        <div class="add-card">
+            <button>Add Product</button>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">favorite</span>
+            <div class="icon2">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <div class="icon3">
+                <span class="material-symbols-outlined">bookmark_added</span>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Fasthand&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1{
+             font-family: "Roboto Condensed", sans-serif;
+        }
+        p{
+            font-family: "Caacupe One", sans-serif;
+        }
+        .text{
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+        #text{
+            background-color: aqua;
+        }
+        .text2{
+            background-color: brown;
+            color: blue;
+        }
+        #text{
+            background-color: aquamarine;
+            color: bisque;
+        }
+        .parent .text1{
+            color: aqua;
+        }
+        h1,span,p,del{
+            color: blue;
+        }
+        .parent > h1{
+            color: aqua;
+        }
+        *{
+            color: blanchedalmond;
+            background-color: rgb(174, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <h1 class="text1">hello</h1>
+            <h1>everyone</h1>
+            <h1>hello</h1>
+        </div>
+    </div>
+    <h1 class="text">Hello Mobile Developer</h1>
+    <h1 class="text2">Hello web developer</h1>
+    <span id="text">This id span</span>
+    <p id="text2">This is p</p>
+    <label for="">This is label</label>
+    <p>Test Color</p>
+
+    <h1>Elment 1</h1>
+    <span>Elment 3</span>
+    <h1>Elment 2</h1>
+    <p>សួស្តី</p>
+    
+    <del>Elment 4</del>
+
+    <div class="parent">
+        <h1>Child1</h1>
+        <div>
+            <h1>child2</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dropdown{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(82, 192, 192);
+        border-radius: 5px;
+    }
+    .dropdown:hover .container{
+        opacity: 1;
+        height: 100px;
+    }
+    button{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 2px gray;
+    } 
+    .container{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(247, 244, 240);
+        transition: all 0.3s ease-in-out ;
+        box-shadow: 0 0 3px gray;
+        opacity: 0;
+        
+    }
+</style>
+<body>
+    <div class="dropdown">
+       <button>DropMe(●'◡'●)</button>
+       <div class="container">
+            <a href="https://www.youtube.com/">Dropdown</a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#">Dropup</a>
+            <a href="https://www.tiktok.com/foryou">Dropyou</a>
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        .chat{
+            width: 700px;
+            height: 800px;
+            background-color:#fff;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px black;
+            position: relative;
+        }
+        .icons{
+           position: absolute;
+           top: 60px;
+           left: 50px;
+           
+        }
+       
+        span{
+            position: absolute;
+            top: 60px;
+        }
+        input{
+            width: 500px;
+            height: 40px;
+            background-color: azure;
+            border-radius: 20px;
+            box-shadow: 0 0 1px black;
+            border: none;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            padding-left: 10px;
+
+        }
+        button{
+            width: 80px;
+            height: 20px;
+            background-color: rgb(77, 77, 203);
+            position: absolute;
+            top: 60px;
+            right: 110px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        button:active{
+            width: 90px;
+            height: 25px;
+            background-color: aquamarine;
+        }
+        .first {
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://i.pinimg.com/736x/a2/85/fe/a285fe3e2513ea8a9d35131b9cf9d8da.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 150px;
+            left: 50px;
+        }
+         .first i{
+            width: 20px;
+            height: 18px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+        .box2{
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMQVa--RBfnEtDtTFqFyTJip-sf6S6CL1JAOw39ZeRw&s=10);
+            background-size: cover;
+            border: 3px solid rgb(10, 112, 23);
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        .active{
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            position: absolute;
+            top: 40px;
+            left: 45px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .story{
+            position: absolute;
+            top: 210px;
+            left: 50px;
+            color: rgb(117, 114, 114);
+        }
+        span{
+            position: absolute;
+            top: 210px;
+            left: 170px;
+        }
+        .add{
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            left: 30px;
+            top: 100px;
+            border: 1px dashed brown;
+            border-radius: 20px;
+        }
+        label{
+           position: absolute;
+           left: 25px;
+           top: 18px;
+           font-size: 12px;
+           color: gray;
+        }
+        .box3{
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://i.pinimg.com/736x/18/17/2b/18172ba0bf9bbddf56e7235e2878d6c1.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+        }
+        .box3 span{
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+        .add2{
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            left: 230px;
+            top: 100px;
+            border: 1px dashed brown;
+            border-radius: 20px;
+            text-align:center;
+            padding: 15px;
+        }
+        .box4{
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://i.pinimg.com/736x/69/17/52/691752c2173035e81348d62f7c9329e1.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 150px;
+            left: 350px;
+        }
+        .add3{
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            left: 330px;
+            top: 100px;
+            border: 1px dashed brown;
+            border-radius: 20px;
+            text-align:center;
+            padding: 10px;
+        }
+        .box4 span{
+            position: absolute;
+            top: 60px;
+            left: 15px;
+        }
+        .box5{
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://i.pinimg.com/1200x/bf/58/f5/bf58f59e226cd0ccf385fa9daa1029b6.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 150px;
+            left: 450px;
+        }
+        .add4{
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            left: 430px;
+            top: 100px;
+            border: 1px dashed brown;
+            border-radius: 20px;
+            text-align:center;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .box5 span{
+            position: absolute;
+            top: 60px;
+            left: 15px;
+        }
+        .box6{
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            border-radius: 50%;
+            box-shadow: 0 0 1px black;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwRHgONzy5Kh1V3_3wUTn9dPqNww-egjEpuauzyjm2b5mXuDDaQNh8dYK&s=10);
+            background-size: cover;
+            position: absolute;
+            top: 150px;
+            left: 550px;
+        }
+        .add5{
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            left: 530px;
+            top: 100px;
+            border: 1px dashed brown;
+            border-radius: 20px;
+            text-align:center;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .box6 span{
+            position: absolute;
+            top: 60px;
+            left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="add">
+            <label for="">Add note</label>
+        </div>
+        <div class="first">
+                <i class="fa-solid fa-plus"></i>
+        </div>
+        <span class="story">Add story</span>
+        <div class="icons">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        <div>
+            
+            <input type="text" placeholder="search">
+            <button type="submit">search</button>
+        </div>
+       
+        <div class="box2">
+            <div class="active"></div>
+        </div>
+        <span>any</span>
+        <div class="add2">b sl o</div>
+        <div class="box3">
+            
+            <div class="active"></div>
+            <span>tony</span>
+            
+        </div>
+        <div class="add3">nham bay nv cr😘</div>
+        <div class="box4">
+            
+            <div class="active"></div>
+            <span>lucca</span>
+            
+        </div>
+        <div class="add4">Rain make me miss you😭</div>
+        <div class="box5">
+            
+            <div class="active"></div>
+            <span>long</span>
+        </div>
+        <div class="add5">sad😭</div>
+        <div class="box6">
+            
+            <div class="active"></div>
+            <span>lyzescdch</span>
+        </div>
+    <div>
+        
+    </div>
+
+    </div>
+</body>
+</html>

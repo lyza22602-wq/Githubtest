@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/8103728/342229_961397.png");
+            background-size: cover;
+            background-position: center;
+            padding: 100px 600px;
+            
+        }
+        .child{
+            width: 600px;
+            height: 700px;
+            
+            box-shadow: 0 0 10px black;
+            padding: 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+           
+        }
+        .child h1{
+            text-align: center;
+            color: aqua;
+        }
+        .child label{
+            font-size: 20px;
+            line-height: 50px;
+            color: rgb(63, 63, 152);
+        }
+        .child input{
+            width: 70%;
+            height: 50px;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .child select{
+            width: 30%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+        }
+        .child option{
+            text-align: center
+
+        }
+        .child button{
+            width: 100%;
+            height: 50px;
+            margin-top: 70px;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 0 20px pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>REGISTER TO LOGIN YOUR WEBSITE</h1>
+           <label for="name">USERNAME</label><br>
+           <input id="name" type="text" placeholder="Enter your name"><br>
+           <label for="p">PASSWORD</label><br>
+           <input id="p" type="password" placeholder="Enter your password"><br>
+           
+           <label for="e">EMAIL</label><br>
+           <input id="e" type="email" placeholder="Enter your email"><br>
+
+           <label for="g">GENDER</label><br>
+           <select name="g" id="">
+                <option selected disabled value="">choose gender</option>
+                <option value="">male</option>
+                <option value="">female</option>
+           </select><br>
+           <button type="submit">Register</button>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
