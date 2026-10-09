@@ -75,7 +75,7 @@
        margin-top: 30px;
     }
     .picture2 div{
-        width: 400px;
+        width: 300px;
         height: 100px;
         /* background-color: pink; */
         color: rgb(50, 103, 218);
@@ -86,6 +86,25 @@
         width: 100%;
         box-shadow: 0 0 3px white;
         border-radius: 30px;
+    }
+    .rate{
+        padding-top: 110px;
+        padding-left: 25px;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+    }
+    .rate span{
+        width: 11px;
+        height: 11px;
+        font-size: 15px;
+        color: gray;
+    }
+    .rating{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-left: 25px;
+        color: white;
     }
     .picture{
          display: grid;
